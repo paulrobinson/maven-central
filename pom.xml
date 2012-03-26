@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.my</groupId>
+  <artifactId>example</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+    <properties>
+        <jbossts.version>4.16.2.Final</jbossts.version>
+    </properties>
+  <dependencies>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossjta</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossjta-integration</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossjts</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossjts-integration</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossts-jopr-plugin</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbosstxbridge</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossxts</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+    <dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossxts-api</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency>
+
+
+<!-- only in 5.x -->
+    <!--dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossts-tools</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency-->
+    <!--dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossxts-interop-tests</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency-->
+    <!--dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>jbossxts-tests</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency-->
+    <!--dependency>
+          <groupId>org.jboss.jbossts</groupId>
+          <artifactId>tsmx-tools-sar</artifactId>
+          <version>${jbossts.version}</version>
+    </dependency-->
+
+
+  </dependencies>
+</project>
