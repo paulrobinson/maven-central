@@ -8,7 +8,9 @@ fi
 
 echo "Checking: $CHECK_ROOT"
 
-echo -e "== check-snapshot-deps.sh =="
+echo -e "\n\n==Looking for artefacts not in repo1.maven.org =="
+cat output.txt  | grep Downloaded | grep -v "Downloaded: http://repo1.maven.org"
+echo -e "\n\n== check-snapshot-deps.sh =="
 bin/check-snapshot-deps.sh $CHECK_ROOT
 echo -e "\n\n== validate-path.sh =="
 bin/validate-path.sh $CHECK_ROOT
